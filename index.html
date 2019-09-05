@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="air-datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <title>Merlines</title>
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid header-main">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container p-0">
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toogler-enabled"><img src="/local/templates/new_dip_main/img/hamburger.svg" alt=""></span>
+                                <span class="toogler-hide"><img src="/local/templates/new_dip_main/img/cross.svg" alt=""></span>
+                            </button>
+            
+                            <a class="navbar-brand" href=""><img src="/img/white-logo.svg" alt=""></a>
+            
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link" href="/">Главная</a>
+                                    <a class="nav-item nav-link ml-3" href="/your-questions/">Ваши вопросы</a>
+                                    <a class="nav-item nav-link ml-3" href="/about-us/">О компании</a>
+                                </div>
+                            </div>
+            
+                            <div class="collapse w-100 mt-3 d-lg-none" id="navbarNavAltMarkup">
+                                <div class="navbar-nav align-items-center">
+                                 
+                                </div>
+                            </div>
+
+                            <div class="d-flex ">
+                                <!-- <button id="enter" class="enter-btn mr-4">Войти</button> -->
+                                <button id="myProfileBtn" class="my-profile-btn mr-4">Мой профиль</button>
+                                <button class="cart-btn" id="miniCartList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="asdad">
+                                    <img class="mr-1" src="/img/cart.svg" alt="">
+                                    <span>Корзина</span>
+                                </button>
+
+                                <div class="dropdown">
+                                    <div class="dropdown-menu mini-cart-list " aria-labelledby="miniCartList">
+                                        
+                                    <div class="uppper-info-cart px-3 py-3">
+
+                                        <div class="d-flex justify-content-between">
+                                            <span class="normal-text">Берлин</span>
+                                            <img src="/img/black-line-in-right.svg" alt="">
+                                            <span class="normal-text">Калининград</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="sm-normal-text">1 апреля 2020</span>
+                                            <span class="sm-normal-text">7800 ₽</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4">
+                                                <span class="normal-text">Берлин</span>
+                                                <img src="/img/black-line-in-right.svg" alt="">
+                                                <span class="normal-text">Калининград</span>
+                                        </div>
+    
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="sm-normal-text">1 апреля 2020</span>
+                                            <span class="sm-normal-text">7800 ₽</span>
+                                        </div>
+        
+                                    </div>
+
+                                    <div class="total-mini-cart px-3 py-3">
+                                        <div class="d-flex flex-column">
+                                            <span class="cost-mini-cart">Сумма заказа</span>
+                                            <span class="small-title-bold">15 600 ₽</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button class="btns-Merlines">Оформление</button>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="close-block">
+                                <img src="/img/close-right-menu.svg" alt="" class="close-right-menu">
+                            </div>
+
+                            <!-- Авторизация и регистрация выезжающее меню -->
+                            
+                            <div class="right-auth-registr">
+                                <div class="row ">
+                                    <div class="col-6 auth-side py-5">
+                                        <span class="big-title">Авторизация на сайте</span>
+                                        <form action="" class="d-flex flex-column mt-3">
+                                            <input type="text" class="input-merlines big-input" placeholder="Ваш номер телефона">
+                                            <input type="text" class="input-merlines big-input mt-3" placeholder="Пароль">
+                                            <div class="check-material d-flex mt-3">
+                                                    <input id="payment-toggle-1" type="checkbox">
+                                                    <label for="payment-toggle-1"></label>
+                                                    <span class="normal-text ml-2">Запомнить меня</span>
+                                            </div>
+                                            <button class="btns-Merlines mt-3">Войти</button>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-6 registration-side pl-5 py-5">
+                                        <span class="big-title">Регистрация нового пользователя</span>
+                                        <ul class="p-3 mb-4">
+                                            <li class="normal-text">Используйте введённые ранее данные</li>
+                                            <li class="normal-text mt-2">Сохраняйте историю заказов</li>
+                                            <li class="normal-text mt-2">Управляйте бронированиями</li>
+                                            <li class="normal-text mt-2">Узнавайте о персонализированных предложениях</li>
+                                        </ul>
+                                        <button id="registration" class="btns-Merlines registr-btn">Зарегистрироваться</button>
+                                    </div>
+
+                                    <div class="col-12 registr-page">
+                                        <form action="">
+                                            <div class="row">
+
+                                                <div class="col-12">
+                                                    <span class="big-title">Регистрация</span>
+                                                </div>
+
+                                                <div class="col-6 mt-5">
+                                                    <input name="name" type="text" class="input-merlines big-input" placeholder="Ваше имя">
+                                                </div>
+
+                                                <div class="col-6 mt-5">
+                                                    <input name="phone" type="text" class="input-merlines big-input" placeholder="Ваша фамилия">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <input name="telephone" type="text" class="input-merlines big-input mt-3" placeholder="Ваш номер телефона">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <input name="email" type="text" class="input-merlines big-input mt-3" placeholder="Ваш E-mail">
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/img/info-icon.svg" alt="" class="">
+                                                        <span class="normal-text ml-2">На него мы вышлем СМС с кодом доступа</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 d-flex justify-content-center mt-4 mb-4">
+                                                    <button type="button" id="registrationSend" class="btns-Merlines registr-send">Отправить</button>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-12 sms-page">
+                                        <div class="row">
+
+                                            <div class="col-12">
+                                                <span class="big-title">Регистрация</span>
+                                            </div>
+
+                                            <div class="col-12 mt-4 d-flex flex-column justify-content-center align-items-center">
+                                                <input type="text" class="input-merlines big-input" placeholder="Пароль из СМС">
+                                                <span class="normal-text mt-3">Вы можете запросить смс повторно через 30 сек</span>   
+                                            </div>
+
+                                            <div class="col-12 d-flex justify-content-center mt-4 mb-5">
+                                                <button type="button" id="registrationFull" class="btns-Merlines">Зарегистрироваться</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 thank-for-registr mb">
+                                        <span class="small-title">Спасибо за регистрацию</span>
+                                        <p class="big-text mt-3">Мы отправили вам электронное письмо со ссылкой для подтвреждения вашей учетной записи. Пожалуйста, проверьте почту, и перейдите по ссылке в письме, чтобы активировать учётную запись</p>
+                                        <p class="big-text">Если вы не получили письмо, то <a href="big-text">нажмите здесь</a> - мы отправим его еще раз</p>
+                                    </div>
+
+                                    <div class="col-12 social-web">
+                                        <span class="big-title">Войти, используя аккаунт соцсети</span>
+                                        <div class="mt-3">
+                                            <a href=""><img src="/img/fb.svg" alt=""></a>
+                                            <a href=""><img class="ml-2" src="/img/ok.svg" alt=""></a>
+                                            <a href=""><img class="ml-2" src="/img/gp.svg" alt=""></a>
+                                            <a href=""><img class="ml-2" src="/img/vkontakte.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Мой профиль выезжающее меню -->
+
+                            <div class="right-my-profile">
+                                <div class="row ">
+
+                                    <div class="col-5">
+
+                                        <!-- Приветствие -->
+
+                                        <div class="greeting-profile p-4">
+                                            <img src="/img/example-photo-profile.svg" alt="" class="">
+                                            <div class="d-flex flex-column ml-3">
+                                                <span class="big-text">Здравствуйте,</span>
+                                                <span class="small-title">Дмитрий</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Меню профиля -->
+
+                                        <div class="menu-profile mt-5">
+
+                                            <div id="myProfileLink" class="d-flex block-prof-link pl-4 active-links-profile">
+                                                <img src="/img/my-profile.svg" alt="" class="">
+                                                <span class="profile-links ml-2 pt-3 pb-3 w-100">Мой профиль</span>
+                                            </div>
+
+                                            <div id="ticketsLink" class="d-flex block-prof-link pl-4">
+                                                <img src="/img/tickets.svg" alt="" class="">
+                                                <span class="profile-links ml-2 pt-3 pb-3 w-100">Билеты</span>
+                                            </div>
+
+                                            <div id="myPassengersLink" class="d-flex block-prof-link pl-4">
+                                                <img src="/img/my-passengers.svg" alt="" class="">
+                                                <span class="profile-links ml-2 pt-3 pb-3 w-100">Мои пассажиры</span>
+                                            </div>
+
+                                            <div id="connectWithUsLink" class="d-flex block-prof-link pl-4">
+                                                <img src="/img/connect-with-us.svg" alt="" class="">
+                                                <span class="profile-links ml-2 pt-3 pb-3 w-100">Связаться с нами</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <a href="#" class="profile-links ml-3">Выйти</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-7">
+
+                                        <div class="my-profile-content px-3 py-4">
+                                            <span class="big-title">Мой профиль</span>
+
+                                            <div class="mt-5 d-flex flex-column">
+                                                <span class="gray-title-input">Имя:</span>
+                                                <input type="text" class="input-merlines big-input mt-2">
+                                            </div>
+
+                                            <div class="mt-3 d-flex flex-column">
+                                                <span class="gray-title-input">Фамилия:</span>
+                                                <input type="text" class="input-merlines big-input mt-2">
+                                            </div>
+
+                                            <div class="mt-3 d-flex flex-column">
+                                                <span class="gray-title-input">Телефон</span>
+                                                <input type="text" class="input-merlines big-input mt-2">
+                                            </div>
+
+                                            <div class="mt-3 d-flex flex-column">
+                                                <span class="gray-title-input">Адрес электронной почты:</span>
+                                                <input type="text" class="input-merlines big-input mt-2">
+                                            </div>
+
+                                            <div class="mt-3 d-flex flex-column">
+                                                <span class="gray-title-input">Дата рождения:</span>
+
+                                                <div class="mt-2">
+
+                                                    <select class="sel-day p-2" name="" id="">
+                                                        <option value="">25</option>
+                                                    </select>
+
+                                                    <select class="sel-month p-2 ml-2" name="" id="">
+                                                        <option value="">Апрель</option>
+                                                    </select>
+
+                                                    <select class="sel-year p-2 ml-2" name="" id="">
+                                                        <option value="">1989</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            
+                                            <div class="d-flex mt-5 align-items-center justify-content-center">
+                                                <button class="btns-Merlines" disabled>Сохранить изменения</button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tickets-content">
+                                            
+                                            <div class="header-tickets p-4">
+                                                <span class="big-title">Мои билеты</span>
+                                            </div>
+
+                                            <div class="mt-5 d-none">
+                                                <span class="big-gray-text">Здесь будет отображаться история ваших заказов а так же ещё не оплаченные билеты</span>
+                                            </div>
+
+                                            <div class="ticket mt-5 p-4">
+
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="big-title">Берлин</span>
+                                                    <img src="/img/arrow-right.svg" alt="" class="">
+                                                    <span class="big-title">Калининград</span>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <span class="small-gray-title">1 апреля 2020</span>
+                                                    <span class="small-gray-title">7 800 ₽</span>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <span class="normal-text">Dmitriy Vorobei</span>
+                                                    <div class="d-flex">
+                                                        <img src="/img/sm-green-circle.svg" alt="">
+                                                        <span class="normal-text ml-2">Оплачен и оформлен</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-end mt-2">
+                                                    <span class="green-link extra-info-link">Информация</span>
+                                                    <span class="green-link hide hide-link">Скрыть</span>
+                                                </div>
+
+                                                <div class="hidden-extra-info mt-3 hide">
+                                                
+                                                    <div class="d-flex flex-column">
+
+                                                        <div class="d-flex">
+                                                            <span class="sm-normal-text">Рейс: </span>
+                                                            <span class="sm-gray-text ml-1">700104</span>
+                                                        </div>
+
+                                                        <div class="d-flex mt-3">
+                                                            <svg width="9" height="54" viewBox="0 0 9 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="4.5" cy="4.5" r="3.75" stroke="#CCCCCC" stroke-width="1.5"/>
+                                                                <circle cx="4.5" cy="37.5" r="4.5" fill="#CCCCCC"/>
+                                                                <rect x="4" y="11" width="1" height="20" fill="#C4C4C4"/>
+                                                            </svg>
+                                                             <div class="d-flex flex-column justify-content-between ml-3">
+                                                                <p class="sm-normal-text">Берлин, <span class="sm-gray-text"> центральный автовокзал</span> <span class="sm-gray-text ml-2">18:30</span></p>
+                                                                <p class="sm-normal-text">Калининград, <span class="sm-gray-text"> южный автовокзал</span> <span class="sm-gray-text ml-2">7:00</span></p>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="d-flex mt-3">
+                                                            <div class="d-flex flex-column">
+                                                                <span class="sm-gray-text mb-2">Пассажир:</span>
+                                                                <span class="sm-normal-text">Dmitry Vorobei</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column ml-4">
+                                                                <span class="sm-gray-text mb-2">Номер билета:</span>
+                                                                <span class="sm-normal-text">2625587703</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column ml-4">
+                                                                <span class="sm-gray-text mb-2">Перевозчик:</span>
+                                                                <span class="sm-blue-link">ЕВРО-ТРАНС БУС</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column mt-3">
+                                                            <span class="sm-gray-text mb-2">Оплачено с карты:</span>
+                                                            <span class="sm-normal-text">************5513</span>
+                                                        </div>
+
+                                                        <div class="d-flex mt-3">
+                                                            <a class="green-link">Ссылка на билет</a>
+                                                            <a class="green-link ml-4">Оставить отзыв</a>
+                                                        </div>
+                                                    </div>
+                                                            
+
+                                                </div>
+
+                                            </div>
+
+                                           
+
+
+
+
+                                        </div>
+
+                                        <div class="my-passengers-content">
+                                            
+                                            <div class="header-passengers p-4">
+                                                <span class="big-title">Мои пассажиры</span>
+                                            </div>
+
+                                            <div class="mt-5 d-none">
+                                                <span class="big-gray-text">При покупке билетов, система автоматически запомнит данные пасажиров и их не придётся вводить в следующий раз</span>
+                                            </div>
+
+                                            <div class="passengers mt-5 p-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="big-title">Дмитрий Воробей</span>
+                                                    <img id="deletePassenger" src="/img/red-cross.svg" alt="">
+                                                </div>
+
+                                                <div class="d-flex mt-2">
+                                                    <span class="big-gray-text">Пол:</span>
+                                                    <span class="big-text ml-1">Мужской</span>
+                                                </div>
+
+                                                <div class="d-flex mt-2">
+                                                    <span class="big-gray-text">Дата рождения:</span>
+                                                    <span class="big-text ml-1">23.04.1989</span>
+                                                </div>
+
+                                                <div class="d-flex mt-2">
+                                                    <span class="big-gray-text">Гражданство:</span>
+                                                    <span class="big-text ml-1">Россия</span>
+                                                </div>
+
+                                                <div class="d-flex mt-2">
+                                                    <span class="big-gray-text">Паспорт:</span>
+                                                    <span class="big-text ml-1">4560123456</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                                                
+                        </div>
+                </nav>
+
+                <!-- Поиск по билетам  -->
+
+                <div class="row search-tickets justify-content-center">
+                    
+                    <div class="col-12 search-btns ">
+                        <input type="text" class="input-search-1" placeholder="Откуда">
+                        <input type="text" class="input-search-2" placeholder="Куда">
+                        <input type="text" class="date-picker datepicker-here" data-position="bottom center" />
+
+                        <div class="dropdown">
+                            <div class="select-passenger align-items-center d-flex" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="asdad">1 взрослый</div>
+                            <div class="dropdown-menu" aria-labelledby="dLabel">
+                                <form class="pl-3 py-3">
+                                    <div class="d-flex paramenters-passenger">
+                                        <div class="d-flex flex-column">
+                                            <span class="git-text">Взрослые</span>
+                                            <span class="gray-text">Старше 15 лет</span>
+                                        </div>
+                                        <div class="qty ml-4">
+                                            <span class="minus"><img src="/img/minus.svg" alt=""></span>
+                                            <input name="" type="number" class="count" value="0">
+                                            <span class="plus"><img src="/img/plus.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex paramenters-passenger">
+                                        <div class="d-flex flex-column">
+                                            <span class="git-text">Дети</span>
+                                            <span class="gray-text">От 0 до 14 лет</span>
+                                        </div>
+                                        <div class="qty ml-4">
+                                            <span class="minus"><img src="/img/minus.svg" alt=""></span>
+                                            <input name="" type="number" class="count" value="0">
+                                            <span class="plus"><img src="/img/plus.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                    <button class="btns-Merlines search-btn mt-5">
+                        <span>Найти билеты</span>
+                        <img class="ml-3" src="/img/bus-icon.svg" alt="" >
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="container p-0 p-sm-2">
+    
+                <div class="row our-functions">
+                    <div class="col-12 col-lg-4 d-flex">
+                        <div class="">
+                            <img src="/img/buy-online.svg" alt="" class="">
+                        </div>
+                        <div class=" ml-3">
+                            <span class="small-title">Покупка онлайн</span>
+                            <p class="text mt-2">Покупайте билет на автобус не выходя из дома</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0 d-flex">
+                        <div class="">
+                            <img src="/img/return-tickets.svg" alt="" class="">
+                        </div>
+                        <div class=" ml-3">
+                            <span class="small-title">Возврат билетов</span>
+                            <p class="text mt-2">Быстрое оформление возврата в личном кабинете</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0 d-flex">
+                        <div class="">
+                            <img src="/img/landing-guarantee.svg" alt="" class="">
+                        </div>
+                        <div class=" ml-3">
+                            <span class="small-title">Гарантия посадки</span>
+                            <p class="text mt-2">Электронный билет гарантирует место в автобусе</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row popular-directions">
+                    <div class="col-12">
+                        <span class="big-title">Популярные направления</span>
+                    </div>
+                    <div class="col-4 mt-5">
+
+                        <div class="popular-trip-1 pt-5 pl-5 pr-5 pb-3 d-flex flex-column justify-content-end">
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Калининград</span>
+                                <span class="big-white-text">Цена от</span>
+                            </div>
+    
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Гданьск</span>
+                                <span class="big-white-text">700 руб</span> 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 mt-5">
+
+                        <div class="popular-trip-2 pt-5 pl-5 pr-5 pb-3 d-flex flex-column justify-content-end">
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Калининград</span>
+                                <span class="big-white-text">Цена от</span>
+                            </div>
+    
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Гданьск</span>
+                                <span class="big-white-text">700 руб</span> 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 mt-5">
+
+                        <div class="popular-trip-3 pt-5 pl-5 pr-5 pb-3 d-flex flex-column justify-content-end">
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Калининград</span>
+                                <span class="big-white-text">Цена от</span>
+                            </div>
+    
+                            <div class="d-flex justify-content-between">
+                                <span class="big-white-text">Гданьск</span>
+                                <span class="big-white-text">700 руб</span> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row newsletter-and-questions">
+
+                    <div class="col-lg-7 newsletter">
+                        <div class="d-flex flex-column flex-sm-row mb-2">
+                            <img class="d-sm-none" src="/img/letter.svg" alt="">
+                            <span class="big-title mt-sm-4">Подпишитесь на рассылку</span>
+                            <img class="ml-sm-5 d-none d-sm-block" src="/img/letter.svg" alt="">
+                        </div>
+                        <span class="text">И первыми узнавайте о скидках и спецпредложениях. Вы можете отписаться от рассылки в любой момент.</span>
+                        <input name="email" type="text" class="input-merlines big-input mt-4" placeholder="Адрес электронной почты">
+                        <button class="btns-Merlines sm-btns mt-4">Подписаться</button>
+                        <p class="mt-2">Нажимая “Подписатья”, вы соглашаетесь с правилами <a href="">использования сервиса</a> и <a href="">обработки персональных данных</a></p>
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column">
+                        <span class="big-title mt-4">Вопросы и ответы</span>
+
+                        <div class="row mt-lg-5">
+                            <div class="col-12">
+    
+                                <ul class="mt-3 ml-0 pl-3">
+        
+                                    <li class="text dropdown-list pb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Как купить билет?</span>
+                                            <img class="line-in-bottom" src="../img/gray-line-in-bottom.svg" alt="">
+                                            <img class="line-in-up hide" src="../img/gray-line-in-up.svg" alt="">
+                                        </div>
+                                        <p class="normal-text mt-3 pb-0 hide">Двойной интеграл расточительно соответствует возрастающий ряд Тейлора, что несомненно приведет нас к истине. Если после применения правила Лопиталя неопределённость типа 0 / 0 осталась, многочлен осмысленно синхронизирует </p>
+                                    </li>
+        
+                                    <li class="text dropdown-list pb-2 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Билет куплен - что дальше?</span>
+                                            <img class="line-in-bottom" src="../img/gray-line-in-bottom.svg" alt="">
+                                            <img class="line-in-up hide" src="../img/gray-line-in-up.svg" alt="">
+                                        </div>
+                                        <p class="normal-text mt-3 pb-0 hide">Двойной интеграл расточительно соответствует возрастающий ряд Тейлора, что несомненно приведет нас к истине. Если после применения правила Лопиталя неопределённость типа 0 / 0 осталась, многочлен осмысленно синхронизирует </p>
+                                    </li>
+        
+                                    <li class="text dropdown-list pb-2 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Билеты обязательно распечатывать?</span>
+                                            <img class="line-in-bottom" src="../img/gray-line-in-bottom.svg" alt="">
+                                            <img class="line-in-up hide" src="../img/gray-line-in-up.svg" alt="">
+                                        </div>
+                                        <p class="normal-text mt-3 pb-0 hide">Двойной интеграл расточительно соответствует возрастающий ряд Тейлора, что несомненно приведет нас к истине. Если после применения правила Лопиталя неопределённость типа 0 / 0 осталась, многочлен осмысленно синхронизирует </p>
+                                    </li>
+        
+                                    <li class="text dropdown-list pb-2 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Можно ли поменять дату билета?</span>
+                                            <img class="line-in-bottom" src="../img/gray-line-in-bottom.svg" alt="">
+                                            <img class="line-in-up hide" src="../img/gray-line-in-up.svg" alt="">
+                                        </div>
+                                        <p class="normal-text mt-3 pb-0 hide">Двойной интеграл расточительно соответствует возрастающий ряд Тейлора, что несомненно приведет нас к истине. Если после применения правила Лопиталя неопределённость типа 0 / 0 осталась, многочлен осмысленно синхронизирует </p>
+                                    </li>
+        
+                                </ul>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex">
+                           <a href="/your-questions/" class="d-flex"> 
+                                <span class="small-title mr-2">Смотреть раздел</span>
+                                <img class="mt-2" height="17px" src="/img/line-in-right.svg" alt="">
+                           </a>
+                        </div>
+                        
+                    </div>
+
+                   
+                </div>
+    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                
+                <div class="row pt-3">
+
+                    <div class="col-12 col-sm-6 col-md-5 col-lg-4 d-flex flex-column">
+                        <span class="big-gray-text">Звонок в поддержку</span>
+                        <a class="small-title mt-3" href="tel:+74012722398">+7(4012) 722-398</a>
+                        <div class="mt-5">
+                            <img src="/img/visa.png" alt="">
+                            <img class="ml-3" src="/img/mastercard.png" alt="">
+                            <img class="ml-3" src="/img/mir.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mt-4 mt-sm-0 d-flex flex-column">
+                        <span class="big-gray-text">Информация</span>
+                        <a href="" class="text mt-3">О компании</a>
+                        <a href="" class="text mt-2">Вопросы и ответы</a>
+                        <a href="" class="text mt-2">Оплата/порядок покупки</a>
+                        <a href="" class="text mt-2">Правила возврата</a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4 mt-md-0 d-flex flex-column">
+                        <span class="big-gray-text">Партнëрам</span>
+                        <a href="" class="text mt-3">Для партнёров</a>
+                        <a href="" class="text mt-2">Новости</a>
+                        <a href="" class="text mt-2">Партнёрская программа</a>
+                        <a href="" class="text mt-2">Регистрация перевозчиков</a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0 d-flex flex-column">
+                        <span class="big-gray-text">Документы</span>
+                        <a href="" class="text mt-3">Договор оферты</a>
+                        <a href="" class="text mt-2">Политика конфиденцальности</a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-2 mt-4 mt-lg-0">
+                        <span class="big-gray-text">Мы в соцсетях</span>
+                        <div class="mt-3">
+                            <img src="/img/vk.svg" alt="">
+                            <img class="ml-2" src="/img/facebook.svg" alt="">
+                            <img class="ml-2" src="/img/instagram.svg" alt=""> 
+                        </div>
+                        <div class="mt-4">
+                            <img src="/img/russia.svg" alt="" class="">
+                            <span class="text ml-2">₽, Россия</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-12 text-right">
+                        <span class="copyright">© 2007–2019, ООО «Транспортно-туристическая компания МерЛайнс»</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="air-datepicker/js/datepicker2.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+$white: #FFFFFF;
+$green: #59D554;
+$black: #454545;
+header {
+    .header-main {
+        background: url(/img/main-bg.jpg) no-repeat center;
+        background-size: cover;
+        @media (min-width: 1200px) {
+            height: 425px;
+        }
+
+        .navbar {
+            .nav-link {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $white;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid $green;
+                    color: $white;
+                }
+            }
+
+            .enter-btn {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $white;
+                border: 2px solid $white;
+                box-sizing: border-box;
+                border-radius: 7px; 
+                background: transparent;
+                outline: none;
+                width: 73px;
+                height: 36px;               
+            }
+
+            .my-profile-btn {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $white;
+                border: 2px solid $white;
+                box-sizing: border-box;
+                outline: none;
+                border-radius: 7px; 
+                background: transparent;
+                width: 120px;
+                height: 36px;               
+            }
+
+            .cart-btn {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $white;
+                outline: none;
+                border: none;
+                background: transparent;      
+                text-align: center;
+                display: flex;  
+                justify-content: center;
+                align-items: center;   
+            }
+
+            .mini-cart-list {
+                left: calc(100% - 230px);
+                width: 282px;
+                padding: 0;
+                border: 0;
+
+                .uppper-info-cart {
+                    background: #EEEEEE;
+                    border-radius: 4px 4px 0px 0px;
+                }
+                
+                .total-mini-cart {
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        width: 131px;
+                        height: 37px;
+                    }
+                }
+            }
+
+            .close-block {
+                position: absolute;
+                width: 75%;
+                // right: 0;
+                right: -100%;
+                transition: left 0.25s ease;
+                overflow: hidden;
+                position: fixed;
+                z-index: 100;
+            }
+
+            .close-right-menu {
+                cursor: pointer;
+            }
+
+            .right-auth-registr  {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                // right: 0;
+                width: 70%;
+                height: 100vh;
+                background: #FFFFFF;
+                -webkit-transition: left 0.25s ease;
+                transition: left 0.25s ease;
+                overflow-y: scroll;
+                padding: 70px 50px;
+                -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.25);
+                z-index: 100;
+
+                .auth-side {
+                    margin-top: 10vh;
+                    
+                    button {
+                        width: 177px;
+                        height: 51px;
+                    }
+                }
+
+                .registration-side {
+                    margin-top: 10vh;
+                    border-left: 1px solid #CCCCCC;
+
+                    .registr-btn {
+                        width: 261px;
+                        height: 51px;
+                    }
+                }
+
+                .registr-page {
+                    display: none;
+
+                    button {
+                        width: 242px;
+                        height: 51px;
+                    }
+                }
+
+                .sms-page {
+                    display: none;
+                    button {
+                        width: 261px;
+                        height: 51px;
+                    }
+                }
+
+                .thank-for-registr {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    display: none;
+                    justify-content: center;
+                    a {
+                        text-decoration: underline;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 128.69%;
+                        color: #2B2B2B;
+                    }
+                }
+
+                
+            }
+
+            .right-my-profile {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                // right: 0;
+                width: 70%;
+                height: 100vh;
+                background: #FFFFFF;
+                -webkit-transition: left 0.25s ease;
+                transition: left 0.25s ease;
+                overflow-y: scroll;
+                padding: 70px 50px;
+                -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.25);
+                z-index: 100;
+
+                .profile-links {
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 128.69%;
+                    color: #2B2B2B;                    
+                }
+
+                .gray-title-input {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 128.69%;
+                    color: #CCCCCC;
+                }
+
+                .greeting-profile {
+                    display: flex;
+                    align-items: center;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                    width: 310px;
+                    height: 143px;
+                }
+
+                .menu-profile {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px;
+                    width: 310px;
+                    min-height: 300px;   
+                    
+                    .block-prof-link {
+                        cursor: pointer;
+                        border-left: 5px solid transparent;
+                        span {
+                            border-bottom: 1px solid #EEEEEE;
+                        }
+                        img {
+                            min-width: 25px;
+                        }
+                    }
+
+                    .active-links-profile {
+                        border-left: 5px solid #59D554;
+                        background: #F7FAF7;
+                        span.profile-links {
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .my-profile-content {
+
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px;
+                    width: 440px;
+        
+                    select {
+                        appearance: none;
+                        border: 1px solid #EEEEEE;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        background: $white;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 128.69%;
+                        color: #2B2B2B;
+                        outline: none;
+                        background: url(/img/bottom-arrow.svg) no-repeat right;
+                        background-position: calc(100% - 20px);
+                    }
+
+                    .sel-day {
+                        width: 79px;
+                        // height: 53px;
+                    }
+
+                    .sel-month {
+                        width: 178px;
+                    }
+                    
+                    .sel-year {
+                        width: 103px;
+                    }
+
+                    button {
+                        width: 260px;
+                        height: 51px;
+                    }
+                }
+
+                .my-passengers-content {
+                    display: none;
+                    width: 440px;
+
+                    .header-passengers {
+                        height: 143px;
+                    }
+
+                    .header-passengers, .passengers {
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                        border-radius: 4px;
+                    }
+
+                }
+
+                .tickets-content {
+                    display: none;
+                    width: 440px;
+
+                    .header-tickets {
+                        height: 143px;
+                    }
+
+                    .header-tickets, .ticket{
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                        border-radius: 4px;
+                    }
+
+                    .ticket {
+                        .green-link {
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 128.69%;
+                            text-decoration-line: underline;
+                            color: $green; 
+                            cursor: pointer;                           
+                        }
+                    }
+
+                    
+                }
+
+               
+
+                
+            }
+
+        }
+
+        .search-tickets {
+
+            .search-btns {
+                margin-top: 7vh;
+                display: flex;
+                justify-content: center;
+
+                .input-search-1, .input-search-2,
+                .select-passenger, .date-picker {
+                    // border: none;
+                    outline: none;
+                    background-color: #FFFFFF;
+                    width: 190px;
+                    height: 51px;
+                    padding-left: 20px;
+                    &::placeholder {
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #CDCDCD;
+    
+                    }
+                }
+
+
+                .input-search-1 {
+                    border-radius: 4px 0px 0px 4px;
+                }
+
+                .input-search-2 {
+                    margin-left: -4px;
+                    border-left: 2px solid #EEEEEE;
+                }
+
+            }
+
+            .date-picker {
+                border-left: 2px solid #EEEEEE;
+                background: url(/img/calendar.svg) no-repeat;
+                background-position: calc(100% - 20px)
+            }
+
+
+            .select-passenger {
+                border-left: 2px solid #EEEEEE;
+                border-radius: 0px 4px 4px 0px;
+                background: url(/img/gray-line-in-bottom.svg) no-repeat;
+                background-position: calc(100% - 20px)
+            }
+
+            .dropdown-menu {
+                .paramenters-passenger {
+                    width: 240px;
+                }
+            }
+
+            .search-btn {
+                width: 264px;
+                height: 51px;
+            }
+        }
+        
+    }
+}
+
+header {
+    border-bottom: 1px solid #EDEDED;
+    .header-certain {
+
+        .navbar {
+            .nav-link {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $black;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid $green;
+                    color: $black;
+                }
+            }
+
+            .enter-btn {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $black;
+                border: 2px solid $black;
+                box-sizing: border-box;
+                border-radius: 7px; 
+                background: transparent;
+                width: 73px;
+                height: 36px;               
+            }
+
+            .cart-btn {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $black;
+                border: none;
+                background: transparent;      
+                text-align: center;
+                display: flex;  
+                justify-content: center;
+                align-items: center;   
+            }
+        }
+
+        .search-tickets {
+            .search-btn {
+                width: 264px;
+                height: 51px;
+            }
+        }
+        
+    }
+}

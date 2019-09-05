@@ -1,0 +1,285 @@
+main {
+    .search-result {
+        margin-top: 10vh;
+
+
+        .ticket {
+            // height: 200px;
+            display: flex;
+            flex-direction: column;
+            background: url(/img/ticket-bg.svg) no-repeat;
+
+            .ticket-hr {
+                height: 1px;
+                color: #CCCCCC;
+                width: 177px;
+                margin: 0px;
+            }
+
+            .green-link {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 128.69%;
+                text-decoration-line: underline;
+                color: $green; 
+                cursor: pointer;                           
+            }
+
+            .select-ticket {
+                width: 155px;
+                height: 51px;
+            }
+
+            .ticket-extra-info {
+                border: 2px solid #EEEEEE;
+                box-sizing: border-box;
+                box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+                border-radius: 0px 0px 4px 4px;
+                max-width: 798px;
+                margin-top: -13px;
+                margin-left: 6px;
+                background: $white;
+
+                .ticket-tabs {
+                    cursor: pointer;
+                }
+
+                .route-content{
+                    display: flex;
+                }
+
+            }
+            
+        }
+
+        .trip-info {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+
+            .upper-title-info {
+                border-bottom: 2px solid #EDEDED;
+            }
+
+            .main-info-trip {
+                border-bottom: 2px solid #EDEDED;
+            }
+
+            .info-cost {
+                button {
+                    width: 248px;
+                    height: 51px;
+                    outline: none;
+                }
+            }
+        }
+
+        .extra-param {
+            cursor: pointer;
+        }
+
+        .hidden-extra-param {
+            .green-link {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 128.69%;
+                color: $green; 
+                cursor: pointer;                           
+            }
+        }
+
+        .breadcrumbs {
+            display: flex;
+            background: url(/img/breadcrumbs-border.svg) no-repeat;
+
+            .prev-link {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 128.69%;
+                color: #59D554;
+            }
+
+            .next-link {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 128.69%;
+                color: #CCCCCC;                
+            }
+
+            .active {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 128.69%;
+                color: #2B2B2B;                
+            }
+        }
+
+        .first-trip, .second-trip {
+            width: fit-content;
+            padding-bottom: 5px;
+
+            .disable-trip {
+                color: #CCCCCC;
+            }
+        }
+
+        .current-trip {
+            border-bottom: 2px solid #59D554;
+        }
+
+        .bus-seats {
+            width: 790px;
+            height: 287px;
+            border: 2px solid #EEEEEE;
+            border-radius: 4px;
+            display: flex;
+
+            &#secondBusSeats {
+                display: none;
+            }
+
+            input[type="checkbox"]:checked + label{
+                color: $white;
+                border-radius: 4px;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                background: #59D554;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            input[type="checkbox"]:checked + label:after{
+                transform:scale(1.3)
+            }
+        
+            input[type="checkbox"]:disabled + label{
+                display:block;
+                box-sizing:border-box;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background:#FFFFFF;
+                border: 2px solid #EEEEEE;
+                color: $gray;
+                border-radius: 4x;
+                position:relative;
+                cursor:pointer;
+                transition: .2s;
+                margin-bottom: 0px;
+            }
+
+            label {
+                display:block;
+                box-sizing:border-box;
+                color: $green;
+                border-radius: 4px;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background:#FFFFFF;
+                border: 2px solid #59D554;
+                position:relative;
+                cursor:pointer;
+                transition: .2s;
+                margin-bottom: 0px;
+            }
+        
+           
+        
+        }
+
+        .next-select-trip-seat {
+            width: 246px;
+            height: 51px;
+            outline: none;
+        }
+
+        .buyer-info {
+            border: 2px solid #EEEEEE;
+            border-radius: 4px;
+
+            select {
+                appearance: none;
+                border: 1px solid #EEEEEE;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background: $white;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 128.69%;
+                color: #2B2B2B;
+                outline: none;
+                background: url(/img/bottom-arrow.svg) no-repeat right;
+                background-position: calc(100% - 20px);
+            }
+
+            button {
+                width: 246px;
+                height: 51px;
+            }
+        }
+
+        .add-extra-laggage, .sms-modal {
+            .save-continue {
+                width: fit-content;
+                height: 51px;
+            }
+            .close-btn {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+    }
+
+    .modal .modal-dialog {
+        margin: 0px auto !important;
+        max-width: 700px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 576px) {
+        .modal-dialog {
+          max-width: 95vw;
+        }
+        .modal {
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+      
+      }
+      
+      /* Малые девайсы («ландшафтные телефоны», >= 576px) */
+      @media (min-width: 576px) {
+        .modal-dialog {
+          max-width: 75vw;
+        }
+      }
+      
+      /* Средние девайсы («таблетки», >= 768px) */
+      @media (min-width: 768px) {
+        .modal-dialog {
+          max-width: 65vw;
+        }
+      }
+      
+      /* Большие девайсы (десктопы, >= 992px) */
+      @media (min-width: 992px) {
+        .modal-dialog {
+          max-width: 50vw;
+        }
+      }
+      
+}

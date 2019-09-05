@@ -1,0 +1,22 @@
+$white: #FFFFFF;
+$green: #59D554;
+$black: #2B2B2B;
+$gray: #CCCCCC;
+
+main {
+
+    .your-questions {
+        margin-top: 10vh;
+    }
+
+    .need-help {
+        margin-top: 10vh;
+        border: 1px solid #EEEEEE;
+        border-radius: 4px;
+
+        button {
+            width: 264px;
+            height: 51px;
+        }
+    }
+}

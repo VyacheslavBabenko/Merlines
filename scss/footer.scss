@@ -1,0 +1,27 @@
+$white: #FFFFFF;
+$green: #59D554;
+$black: #2B2B2B;
+$gray: #CCCCCC;
+
+footer {
+    margin-top: 5vh;
+    border-top: 2px solid #EDEDED;
+
+    a {
+       &.text {
+            color: #000000;
+       }
+
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+
+    .copyright {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: $black;
+    }
+}

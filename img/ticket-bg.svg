@@ -1,0 +1,42 @@
+<svg width="810" height="183" viewBox="0 0 810 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<mask id="path-1-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M470 5C470 7.76142 467.761 10 465 10C462.239 10 460 7.76142 460 5H11C8.79086 5 7 6.79086 7 9V170C7 172.209 8.79088 174 11 174H460C460 171.239 462.239 169 465 169C467.761 169 470 171.239 470 174H799C801.209 174 803 172.209 803 170V9C803 6.79086 801.209 5 799 5H470Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M470 5C470 7.76142 467.761 10 465 10C462.239 10 460 7.76142 460 5H11C8.79086 5 7 6.79086 7 9V170C7 172.209 8.79088 174 11 174H460C460 171.239 462.239 169 465 169C467.761 169 470 171.239 470 174H799C801.209 174 803 172.209 803 170V9C803 6.79086 801.209 5 799 5H470Z" fill="white"/>
+<path d="M470 5V4H469V5H470ZM460 5H461V4H460V5ZM460 174V175H461V174H460ZM470 174H469V175H470V174ZM465 11C468.314 11 471 8.31371 471 5H469C469 7.20914 467.209 9 465 9V11ZM459 5C459 8.31371 461.686 11 465 11V9C462.791 9 461 7.20914 461 5H459ZM11 6H460V4H11V6ZM8 9C8 7.34315 9.34315 6 11 6V4C8.23858 4 6 6.23858 6 9H8ZM8 170V9H6V170H8ZM11 173C9.34316 173 8 171.657 8 170H6C6 172.761 8.2386 175 11 175V173ZM460 173H11V175H460V173ZM461 174C461 171.791 462.791 170 465 170V168C461.686 168 459 170.686 459 174H461ZM465 170C467.209 170 469 171.791 469 174H471C471 170.686 468.314 168 465 168V170ZM799 173H470V175H799V173ZM802 170C802 171.657 800.657 173 799 173V175C801.761 175 804 172.761 804 170H802ZM802 9V170H804V9H802ZM799 6C800.657 6 802 7.34315 802 9H804C804 6.23857 801.761 4 799 4V6ZM470 6H799V4H470V6Z" fill="#EEEEEE" mask="url(#path-1-inside-1)"/>
+</g>
+<circle cx="465" cy="66" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="59" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="52" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="45" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="38" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="31" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="24" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="17" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="108" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="101" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="94" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="87" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="80" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="73" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="115" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="157" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="150" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="164" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="143" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="136" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="129" r="1" fill="#CCCCCC"/>
+<circle cx="465" cy="122" r="1" fill="#CCCCCC"/>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="810" height="183" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="3.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

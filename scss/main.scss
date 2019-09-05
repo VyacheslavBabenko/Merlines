@@ -1,0 +1,65 @@
+$white: #FFFFFF;
+$green: #59D554;
+
+main {
+
+    .our-functions {
+        margin-top: 10vh;
+    }
+
+    .popular-directions {
+        margin-top: 10vh;
+        .popular-trip-1 {
+            background: url(/img/gdansk.jpg) no-repeat;
+            background-position: center;
+            background-size: 450px;
+            height: 390px;
+            transition: 1s;
+
+            &:hover {
+                background-size: 100%;
+                transition: 1s;
+            }
+        }
+
+        .popular-trip-2 {
+            background: url(/img/berlin.jpg) no-repeat;
+            background-position: center;
+            background-size: 450px;
+            height: 301px;
+            transition: 1s;
+
+            &:hover {
+                background-size: 100%;
+                transition: 1s;
+            }
+        }
+
+        .popular-trip-3 {
+            background: url(/img/gdansk.jpg) no-repeat;
+            background-position: center;
+            background-size: 450px;
+            height: 349px;
+            transition: 1s;
+
+            &:hover {
+                background-size: 100%;
+                transition: 1s;
+            }
+        }
+
+        
+    }
+
+    .newsletter-and-questions{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    
+}
